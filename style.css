@@ -29,7 +29,67 @@ main{
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
+    
+}
+
+button.active{
+    background-color: #333;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.colorWheel{
+    padding: 0px;
     width: 200px;
+    background-color: transparent;
+    border: none;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+button{
+    border-radius: 4px;
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mainGrid{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+#grid{
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.gridSize{
+    width: 500px;
+}
+
+.size{
+    margin-bottom: -20px;
+    font-size: 20px;
+}
+
+.grid{
+   width: 500px; 
+   height: 500px;
+   display: grid;
 }
 
 .info{
